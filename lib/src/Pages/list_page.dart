@@ -1,4 +1,5 @@
 import 'package:crud/src/Pages/save_page.dart';
+import 'package:crud/src/db/operation.dart';
 import 'package:flutter/material.dart';
 
 class ListPage extends StatelessWidget {
@@ -7,6 +8,8 @@ class ListPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Operation.note();
+
     return Scaffold(
       //ubicar un boton para navegar
       floatingActionButton: FloatingActionButton(
