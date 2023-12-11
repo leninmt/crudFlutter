@@ -29,9 +29,9 @@ Future<Future<int>> insert(Note note) async{
       print("______" + n["title"]);
     }
     return List.generate(notesMap.length, (i) => Note(
-      id: notesMap[i]["id"] as Int, 
+      id: notesMap[i]["id"] as int, 
       title:notesMap[i]["title"] as String, 
       content:notesMap[i]["content"] as String));
   }
-  static void notes(){}
+  static void note(){}
 }
